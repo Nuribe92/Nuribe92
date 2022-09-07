@@ -1,0 +1,357 @@
+:root{
+    --vanita-color: #BF3CBF;
+    --background-blueis:#1b1b32;
+}
+header {
+    text-align: left;
+    min-width: 100%;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+body {
+    background-color: #1b1b32;
+    color: #f5f6f7;
+    margin: auto;
+    font-family: 'Avenir', sans-serif;
+
+    }
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+    font-family: serif;
+    color: var(--vanita-color);
+    
+    
+}
+
+p{
+    text-align: center;
+    padding: 1px;
+    margin-top:-15px
+
+}
+
+.row {
+    display: flex;
+}
+
+.navbar {
+    display: block;
+    flex-direction: row;
+    top: 0px;
+
+}
+
+.column {
+    flex: 33%;
+    padding: 50px;
+    align-items: center;
+
+}
+.nabvar-items {
+
+    background-color: transparent;
+    border: transparent;
+    font-size: 1.40rem;
+    font-weight: italic;
+    display: block;
+    float: center;
+    overflow: hidden;
+
+}
+.grid-container {
+    display:grid;
+    column-gap: 10px;
+    grid-template-columns: auto auto auto;
+    justify-content:center;
+    border-color: #0000;
+    margin: 10px;
+
+}
+a{
+
+    color: white;
+}
+a:hover{
+    color: #000000;
+}
+
+ol{
+    padding-left: 5px;
+    margin: 0px;
+}
+.grid-item {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    padding:0px;
+    border-radius: 0px 0px 12px 12px;
+    text-align: center;
+    background-color: #0000;
+
+    }
+.card{
+    background-color: rgba(0, 0, 0, 0) ;
+    opacity: 1;
+    width: 400px;
+
+
+}
+.card-img-top{
+    object-fit: cover;
+    
+    min-width: 399px;
+    max-width: 399px;
+    min-height: 400px;
+    max-height:400px;
+    text-align: center;
+}
+img {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.button{
+    background-color: #000000;
+    color: black;
+}
+.carousel-inner{
+    display: block;
+
+}
+.carousel-control-prev{
+    color: black;
+}
+form {
+    text-align: center;
+    width: 30%;
+    max-width: 800px;
+    min-width: 200px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+fieldset {
+    border: none;
+    border-bottom: 3px solid #3b3b4f;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+label {
+    display: block;
+    margin: 0.5rem 0;
+    text-align: left;
+  }
+textarea{
+    width: 100%;
+  }
+input{
+    width: 100%;
+    border-radius: 12px;
+}
+input[type="button"], input[type="reset"]{
+    width: 49%;
+    height: 100%;
+}
+.grid{
+    color: #0000;
+}
+.logo{
+    width: 15%;
+    border-bottom: -1rem;
+    margin-top: -20px;
+    border-radius: 0px;
+}
+.d-block{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    max-width: 700px;
+    max-height: 450px;
+    min-width: 700px;
+    min-height: 450px;
+    object-fit: cover;
+}
+.btn-success{
+    background-color:#8E38D9;
+    border: 0;
+}
+.btn-success:hover{
+    background-color: #E53361;
+}
+#btn-submit{
+    color: #000;
+    border: 0;
+}
+#btn-reset{
+    background-color: #E53361;
+    border: 0;
+}
+#btn-reset:hover{
+    background-color: #8E38D9;
+}
+#van{
+    font-family: serif;
+    font-size:500%;
+    color: #BF3CBF;
+    z-index: 2;
+    position:absolute;
+    top: 16%;
+    left: 41%;
+
+}
+#bam{
+    position:absolute;
+    top: 102%;
+    left: 41.5%;
+    font-size: 20px;
+    letter-spacing: 4.5px;
+    background-image: linear-gradient(45deg, #FD2059 25%, #C0BFBF 75%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-weight: bold;
+    font-family: serif;
+    padding-top: 5px;
+
+}
+#lips{
+    width: 45px;
+    height: 50px;
+    margin-top: -48px;
+    margin-right: 42.5%;
+    z-index: 1;
+    position: absolute;
+    top: 75%;
+    left: 92%;
+    opacity: 40%
+}
+table{
+    width: 80%;
+    justify-content: center;
+    position: relative;
+    left: 10%;
+    
+
+}
+#tablehead{
+    height: 50px;
+    
+}
+td{
+    border: 5px solid white;
+    height: 300px;
+    text-align:center;
+    
+    
+
+}
+#grid-img{
+    object-fit: cover;
+    border-radius: 30px;
+    padding: 20px;
+}
+.videos{
+    display: grid;
+    grid-template-columns: auto auto;
+    border-radius: 12px;
+}
+.grid-videos{
+    align-items: center;
+    text-align: center;
+}
+video{
+    height: 500px;
+    width: 700px;
+    background-color: #000000;
+    border-radius: 12px;
+     }
+ .icons{
+        display: flex;
+        column-gap: 12px;
+        justify-content: right;
+        
+    }
+ .icon{
+        width: 50px;
+        height: 50px;
+        text-decoration: none;
+        font-size: 26px;
+        color: #fff;
+        border-radius: 50%;
+        outline: 2px solid #fff;
+        transition-property:outline-offset, outline-color, background-color;
+        transition-duration: .25s;
+        vertical-align: middle;
+        position: fixed;
+        
+    }
+    
+    .icon:hover{
+        outline-offset: 4px;
+        animation: shake .25s;
+    }
+    
+    .icon:hover i{
+        animation: shake .25s;
+    }
+    
+    .icon--instagram:hover{
+        background-image:
+        radial-gradient(circle at 30% 107%,
+        #fdf497 0%, #fdf497 5%,
+        #fd5849 45%, #d6249e 60%,
+        #2859eb 90%);
+        outline-color: #a02d76;
+    
+    }
+    .icon--meta:hover{
+        background-color: #1da1f2;
+        outline-color: #1da1f2;
+    
+    }
+    .icon--whatsapp:hover{
+        background-color: #0C6614;
+        outline-color: #2ea44f;
+    }
+    @keyframes shake {
+        10%{transform: rotate(15deg);}
+        20%{transform: rotate(-15deg);}
+        30%{transform: rotate(15deg);}
+        40%{transform: rotate(-15deg);}
+    }
+    aside{
+        justify-content: right;
+        border: 10px 0px;
+        padding-right: -10px;
+        position: fixed;
+        left: 98%;
+    }
+    #insta{
+        margin-top: -7px;
+        top: 40%;
+        z-index: 2;
+   }    
+
+    #meta{
+        margin-top: 10px;
+        top: 45%;
+        z-index: 2;
+        object-fit:fill;
+    }
+    #whatsapp{
+        margin-top: 25px;
+        top: 50%;
+        z-index: 2;
+    }
+
