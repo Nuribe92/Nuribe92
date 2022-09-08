@@ -3,5 +3,5 @@ function alert1() {
 }
 function instaLink(){
     window.location.href
-
+    
 }
