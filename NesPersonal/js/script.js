@@ -4,3 +4,4 @@ function alert1() {
 function instaLink(){
     window.location.href = "https://instagram.com/melissabhmakeup?igshid=YmMyMTA2M2Y=";
 }
+
