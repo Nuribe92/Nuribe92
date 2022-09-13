@@ -336,22 +336,23 @@ video{
         padding-right: -10px;
         position: fixed;
         left: 98%;
+        z-index: 4;
     }
     #insta{
         margin-top: -7px;
         top: 40%;
-        z-index: 2;
+        z-index: 4;
    }    
 
     #meta{
         margin-top: 10px;
         top: 45%;
-        z-index: 2;
+        z-index: 4;
         object-fit:fill;
     }
     #whatsapp{
         margin-top: 25px;
         top: 50%;
-        z-index: 2;
+        z-index: 4;
     }
 
