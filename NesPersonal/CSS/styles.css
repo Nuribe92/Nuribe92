@@ -357,5 +357,6 @@ video{
     }
 
 iframe{
-    
+        width: max-content;
+        height: fit-content;
 }
