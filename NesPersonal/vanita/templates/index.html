@@ -9,19 +9,20 @@
   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"crossorigin="anonymous"></script>
-    <link href="../CSS/styles.css" rel="stylesheet">
+    <link href="/static/styles.css" rel="stylesheet">
     <title> Homepage Vanita</title>
-    <script src="../js/script.js" rel="script"></script>
+    <script src="/static/js/script.js" rel="script"></script>
 </head>
 <body>
       <section >
         <!-- Botones para navegar entre paginas -->
         <header class="navbar">
             <ol role="group" aria-label="Basic mixed styles example">
-                <button type="button" class="btn btn-success"><a href="../html/products.html">Products</a></button>
-                <button type="button" class="btn btn-success"> <a href="../html/contact.html">Contact</a></button>
+                <button type="button" class="btn btn-success"><a href="/products">Products</a></button>
+                <button type="button" class="btn btn-success"> <a href="/contact">Contact</a></button>
+                {% if hide_login != True %}<button type="button" class="btn btn-success"> <a href="/login">Login</a></button>{% endif %}
             </ol>
-            <h2 id="van">VANITÁ<img id="lips" rel="lips" src="../img&vid/red-lips.png"></h2>
+            <h2 id="van">VANITÁ<img id="lips" rel="lips" src="{{url_for('static', filename='img&vid/red-lips.png')}}"></h2>
             <p id="bam">BEAUTY AND MAKEUP</p>
             <br>
         </header>
@@ -31,17 +32,17 @@
        <div>
       <!--Iconos de redes sociales-->
     <aside id="insta" onclick="instaLink()" class="icons">
-        <img src="../img&vid/instagram.png" class="icon icon--instagram" alt="intagram">
+        <img src="{{url_for('static', filename='img&vid/instagram.png')}}" class="icon icon--instagram" alt="intagram">
             <i class="ri-instagram-line"></i>
         </a>
     </aside>
     <aside id="meta" onclick="metaLink()" class="icons">
-        <img src="../img&vid/meta.png" class="icon icon--meta" alt="meta">
+        <img src="{{url_for('static', filename='img&vid/meta.png')}}" class="icon icon--meta" alt="meta">
             <i class="ri-meta-line"></i>
         </a>
     </aside>
     <aside id="whatsapp" onclick="whatsappLink()" class="icons">
-        <img src="../img&vid/whatsapp.png" class="icon icon--whatsapp" alt="whatsapp">
+        <img src="{{url_for('static', filename='img&vid/whatsapp.png')}}" class="icon icon--whatsapp" alt="whatsapp">
             <i class="ri-whatsapp-line"></i>
         </a>
     </aside>
@@ -58,19 +59,19 @@
         </div>
         <div class="carousel-inner" >
           <div class="carousel-item active" style="text-align: center;">
-            <a href="../html/products.html"><img src="../img&vid/maq1.jpg"  class="d-block" alt="Maquillaje 1"></a>
+            <a href="/products"><img src="{{url_for('static', filename='img&vid/maq1.jpg')}}" class="d-block" alt="Maquillaje 1"></a>
           </div>
           <div class="carousel-item" style="text-align: center;">
-            <a href="../html/products.html"><img src="../img&vid/maq2.jpg" class="d-block" alt="Maquillaje 2"></a>
+            <a href="/products"><img src="{{url_for('static', filename='img&vid/maq2.jpg')}}" class="d-block" alt="Maquillaje 2"></a>
           </div>
           <div class="carousel-item" style="text-align: center;">
-            <a href="../html/products.html"><img src="../img&vid/maq3.jpg" class="d-block" alt="Maquillaje 3"></a>
+            <a href="/products"><img src="{{url_for('static', filename='img&vid/maq3.jpg')}}" class="d-block" alt="Maquillaje 3"></a>
           </div>
           <div class="carousel-item" style="text-align: center;">
-            <a href="../html/products.html"><img src="../img&vid/maq4.jpg" class="d-block" alt="Maquillaje 4"></a>
+            <a href="/products"><img src="{{url_for('static', filename='img&vid/maq4.jpg')}}" class="d-block" alt="Maquillaje 4"></a>
           </div>
           <div class="carousel-item" style="text-align: center;">
-            <a href="../html/products.html"><img src="../img&vid/maq5.jpg" class="d-block" alt="Maquillaje 5"></a>
+            <a href="/products"><img src="{{url_for('static', filename='img&vid/maq5.jpg')}}" class="d-block" alt="Maquillaje 5"></a>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -91,7 +92,7 @@
       <div class="grid-videos">
        <h1 id="label 1">MAKEUP TUTORIAL 1</h1> 
      <video id="video1"controls>
-      <source src="../img&vid/Maquillaje de Ojos (SIREN EYES).mp4" type="video/mp4">
+      <source src="{{url_for('static', filename='img&vid/Maquillaje de Ojos (SIREN EYES).mp4')}}" type="video/mp4">
       Your browser does not support the video tag
     </video>
     </div>
@@ -99,7 +100,7 @@
     <div class="grid-videos">
       <h1 id="label2"> MAKEUP TUTORIAL 2</h1>
      <video id="video1"controls>
-      <source src="../img&vid/Maquillaje FACIL para EVENTOS ESPECIALES.mp4" type="video/mp4">
+      <source src="{{url_for('static', filename='img&vid/Maquillaje FACIL para EVENTOS ESPECIALES.mp4')}}" type="video/mp4">
       Your browser does not support the video tag
      </video>
     </div>
@@ -111,7 +112,7 @@
 </main>
 <footer>
   <p>For more information contact us at (555) 555-55-55</p>
-  <p>or fill out this <a href="./contact.html">form</a></p>
+  <p>or fill out this <a href="/contact">form</a></p>
 </footer>
 <section><fieldset></fieldset></section>
 </html>

@@ -1,0 +1,7 @@
+*~
+*.pyc
+/.vscode/
+.DS_Store
+NesPersonal/.DS_Store
+*/env
+NesPersonal/vanita/flask_session
