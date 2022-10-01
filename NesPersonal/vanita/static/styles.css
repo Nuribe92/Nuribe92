@@ -7,6 +7,13 @@ header {
     min-width: 100%;
     min-height: 100px;
     max-height: 100px;
+    
+}
+
+#login_button{
+    position: absolute;
+    right: 5%;
+    
 }
 
 body {
@@ -39,7 +46,7 @@ p{
 }
 
 .navbar {
-    display: block;
+    display: flex;
     flex-direction: row;
     top: 0px;
 
@@ -81,7 +88,8 @@ a:hover{
 
 ol{
     padding-left: 5px;
-    margin: 0px;
+    margin-left: 5px;
+    
 }
 .grid-item {
     border: 1px solid rgba(255, 255, 255, 0.8);

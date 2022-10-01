@@ -20,9 +20,11 @@
         <!-- Botones para navegar entre paginas -->
         <header class="navbar">
             <ol role="group" aria-label="Basic mixed styles example">
+
                 <button type="button" class="btn btn-success"><a href="/products">Products</a></button>
                 <button type="button" class="btn btn-success"> <a href="/contact">Contact</a></button>
-                {% if hide_login != True %}<button type="button" class="btn btn-success"> <a href="/login">Login</a></button>{% endif %}
+                {% if hide_login != True %}<button id="login_button" type="button" class="btn btn-success"> <a href="/login">Sing in/up</a></button>{% endif %}
+                <!--{% if hide_login == True %}<button id="logout_button" type="button" class="btn btn-success"> <a href="/">logout</a></button>{% endif %} -->
             </ol>
             <h2 id="van">VANITÁ<img id="lips" rel="lips" src="{{url_for('static', filename='img&vid/red-lips.png')}}"></h2>
             <p id="bam">BEAUTY AND MAKEUP</p>
