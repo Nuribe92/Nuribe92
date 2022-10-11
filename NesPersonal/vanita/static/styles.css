@@ -3,10 +3,10 @@
     --background-blueis:#1b1b32;
 }
 header {
-    text-align: left;
+    
     min-width: 100%;
     min-height: 100px;
-    max-height: 100px;
+    max-height: 200px;
     
 }
 
@@ -33,6 +33,7 @@ h1 {
     
     
 }
+
 
 p{
     text-align: center;
@@ -173,11 +174,15 @@ input[type="button"], input[type="reset"]{
 .grid{
     color: #0000;
 }
-.logo{
-    width: 15%;
-    border-bottom: -1rem;
-    margin-top: -20px;
-    border-radius: 0px;
+#logo_vanita{
+    width: fit-content;
+    height: 100%;
+    position:absolute;
+    align-items: center;
+    margin-top: ;
+    top: 2%;
+    left: 50%
+ 
 }
 .d-block{
     display: flex;
@@ -193,6 +198,7 @@ input[type="button"], input[type="reset"]{
 .btn-success{
     background-color:#8E38D9;
     border: 0;
+    position: absolute;
 }
 .btn-success:hover{
     background-color: #E53361;
@@ -208,45 +214,7 @@ input[type="button"], input[type="reset"]{
 #btn-reset:hover{
     background-color: #8E38D9;
 }
-#van{
-    font-family: serif;
-    font-size:500%;
-    color: #BF3CBF;
-    z-index: 2;
-    position:absolute;
-    top: 16%;
-    left: 41%;
 
-}
-#bam{
-    position:absolute;
-    top: 102%;
-    left: 41.5%;
-    font-size: 20px;
-    letter-spacing: 4.5px;
-    background-image: linear-gradient(45deg, #FD2059 25%, #C0BFBF 75%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    font-weight: bold;
-    font-family: serif;
-    padding-top: 5px;
-
-}
-#lips{
-    width: 45px;
-    height: 50px;
-    margin-top: -48px;
-    margin-right: 42.5%;
-    z-index: 1;
-    position: absolute;
-    top: 75%;
-    left: 92%;
-    opacity: 40%
-}
 table{
     width: 80%;
     justify-content: center;

@@ -2,7 +2,7 @@ function alert1() {
     alert("Nothing else to show");
 }
 function instaLink(){
-    window.open("https://instagram.com/vanitabeautyandmakeup?igshid=YmMyMTA2M2Y=");
+    window.open("https://instagram.com/vanitabeauty_?igshid=YmMyMTA2M2Y=");
 }
 function metaLink(){
     window.open("https://instagram.com/melissabhmakeup?igshid=YmMyMTA2M2Y=");
