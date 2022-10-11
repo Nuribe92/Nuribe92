@@ -25,7 +25,7 @@
                 {% if hide_login != True %}<button id="login_button" type="button" class="btn btn-success"> <a href="/login">Sing in/up</a></button>{% endif %}
                 <!--{% if hide_login == True %}<button id="logout_button" type="button" class="btn btn-success"> <a href="/">logout</a></button>{% endif %} -->
             </ol>
-            <img id="logo_vanita" src="../static/img&vid/vanita-positivo.png">
+            <img id="logo_vanita" src="../static/imgvid/vanita-positivo.png">
             <br>
         </header>
     </section>
@@ -34,23 +34,23 @@
        <div>
       <!--Iconos de redes sociales-->
     <aside id="insta" onclick="instaLink()" class="icons">
-        <img src="{{url_for('static', filename='img&vid/instagram.png')}}" class="icon icon--instagram" alt="intagram">
+        <img src="{{url_for('static', filename='imgvid/instagram.png')}}" class="icon icon--instagram" alt="intagram">
             <i class="ri-instagram-line"></i>
         </a>
     </aside>
     <aside id="meta" onclick="metaLink()" class="icons">
-        <img src="{{url_for('static', filename='img&vid/meta.png')}}" class="icon icon--meta" alt="meta">
+        <img src="{{url_for('static', filename='imgvid/meta.png')}}" class="icon icon--meta" alt="meta">
             <i class="ri-meta-line"></i>
         </a>
     </aside>
     <aside id="whatsapp" onclick="whatsappLink()" class="icons">
-        <img src="{{url_for('static', filename='img&vid/whatsapp.png')}}" class="icon icon--whatsapp" alt="whatsapp">
+        <img src="{{url_for('static', filename='imgvid/whatsapp.png')}}" class="icon icon--whatsapp" alt="whatsapp">
             <i class="ri-whatsapp-line"></i>
         </a>
     </aside>
     </div>
     <!-- Carousell-->
-    <section>
+    <section id="section-carousel">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" >
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -61,19 +61,19 @@
         </div>
         <div class="carousel-inner" >
           <div class="carousel-item active" style="text-align: center;">
-            <a href="/products"><img src="{{url_for('static', filename='img&vid/maq1.jpg')}}" class="d-block" alt="Maquillaje 1"></a>
+            <a href="/products"><img src="{{url_for('static', filename='imgvid/maq1.jpg')}}" class="d-block" alt="Maquillaje 1"></a>
           </div>
           <div class="carousel-item" style="text-align: center;">
-            <a href="/products"><img src="{{url_for('static', filename='img&vid/maq2.jpg')}}" class="d-block" alt="Maquillaje 2"></a>
+            <a href="/products"><img src="{{url_for('static', filename='imgvid/maq2.jpg')}}" class="d-block" alt="Maquillaje 2"></a>
           </div>
           <div class="carousel-item" style="text-align: center;">
-            <a href="/products"><img src="{{url_for('static', filename='img&vid/maq3.jpg')}}" class="d-block" alt="Maquillaje 3"></a>
+            <a href="/products"><img src="{{url_for('static', filename='imgvid/maq3.jpg')}}" class="d-block" alt="Maquillaje 3"></a>
           </div>
           <div class="carousel-item" style="text-align: center;">
-            <a href="/products"><img src="{{url_for('static', filename='img&vid/maq4.jpg')}}" class="d-block" alt="Maquillaje 4"></a>
+            <a href="/products"><img src="{{url_for('static', filename='imgvid/maq4.jpg')}}" class="d-block" alt="Maquillaje 4"></a>
           </div>
           <div class="carousel-item" style="text-align: center;">
-            <a href="/products"><img src="{{url_for('static', filename='img&vid/maq5.jpg')}}" class="d-block" alt="Maquillaje 5"></a>
+            <a href="/products"><img src="{{url_for('static', filename='imgvid/maq5.jpg')}}" class="d-block" alt="Maquillaje 5"></a>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -94,7 +94,7 @@
       <div class="grid-videos">
        <h1 id="label 1">MAKEUP TUTORIAL 1</h1> 
      <video id="video1"controls>
-      <source src="{{url_for('static', filename='img&vid/Maquillaje de Ojos (SIREN EYES).mp4')}}" type="video/mp4">
+      <source src="{{url_for('static', filename='imgvid/Maquillaje de Ojos (SIREN EYES).mp4')}}" type="video/mp4">
       Your browser does not support the video tag
     </video>
     </div>
@@ -103,7 +103,7 @@
     <div class="grid-videos">
       <h1 id="label2"> MAKEUP TUTORIAL 2</h1>
      <video id="video1"controls>
-      <source src="{{url_for('static', filename='img&vid/Maquillaje FACIL para EVENTOS ESPECIALES.mp4')}}" type="video/mp4">
+      <source src="{{url_for('static', filename='imgvid/Maquillaje FACIL para EVENTOS ESPECIALES.mp4')}}" type="video/mp4">
       Your browser does not support the video tag
      </video>
     </div>

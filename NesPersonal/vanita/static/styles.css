@@ -107,12 +107,16 @@ ol{
 
 
 }
+#section-carousel{
+    height: 600px;
+    width: 100%;
+    display: grid;
+}
 .card-img-top{
     object-fit: cover;
-    
-    min-width: 399px;
-    max-width: 399px;
-    min-height: 400px;
+    min-width: 400px;
+    max-width: 400px;
+    min-height:400px;
     max-height:400px;
     text-align: center;
 }
@@ -131,8 +135,25 @@ img {
 }
 .carousel-inner{
     display: block;
-
 }
+    .carousel-item{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-57%, 10%);
+    min-width: 600px;
+    max-width: 600px;
+    min-height:600px;
+    max-height:600px; 
+   }
+   .carousel-item img{
+    height: 600px;
+    width: 600px;
+   }
+
+
 .carousel-control-prev{
     color: black;
 }
@@ -175,13 +196,14 @@ input[type="button"], input[type="reset"]{
     color: #0000;
 }
 #logo_vanita{
-    width: fit-content;
-    height: 100%;
+    width: 13%;
+    height: 250%;
     position:absolute;
     align-items: center;
-    margin-top: ;
-    top: 2%;
-    left: 50%
+    margin-top: -60px;
+    top: 1%;
+    left: 43%
+    
  
 }
 .d-block{
@@ -198,7 +220,7 @@ input[type="button"], input[type="reset"]{
 .btn-success{
     background-color:#8E38D9;
     border: 0;
-    position: absolute;
+    
 }
 .btn-success:hover{
     background-color: #E53361;
