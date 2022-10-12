@@ -22,8 +22,10 @@
 
                 <button type="button" class="btn btn-success"><a href="/products">Products</a></button>
                 <button type="button" class="btn btn-success"> <a href="/contact">Contact</a></button>
-                {% if hide_login != True %}<button id="login_button" type="button" class="btn btn-success"> <a href="/login">Sing in/up</a></button>{% endif %}
+                {% if hide_login != True %}<button id="login_button" type="button" class="btn btn-success"> <a href="/login">Sing in</a></button>{% endif %}
+                {% if hide_login != True %}<button id="register_button" type="button" class="btn btn-success"> <a href="/register">Register</a></button>{% endif %}
                 <!--{% if hide_login == True %}<button id="logout_button" type="button" class="btn btn-success"> <a href="/">logout</a></button>{% endif %} -->
+                
             </ol>
             <img id="logo_vanita" src="../static/imgvid/vanita-positivo.png">
             <br>

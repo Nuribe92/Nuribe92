@@ -41,6 +41,7 @@ def index():
     """Show portfolio of stocks"""
     user_id = session.get("user_id")
     hide_login = True if user_id else False
+    
     # stocks = db.execute("SELECT symbol, name, price, SUM(shares) as totalShares FROM transactions WHERE user_id = ? GROUP BY symbol", user_id)
     # cash = db.execute("SELECT cash FROM users WHERE id = ?", user_id)[0]["cash"]
 

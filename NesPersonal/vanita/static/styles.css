@@ -15,6 +15,10 @@ header {
     right: 5%;
     
 }
+    #register_button{
+        position: absolute;
+        right: 9%;
+    }
 
 body {
     background-color: #1b1b32;
