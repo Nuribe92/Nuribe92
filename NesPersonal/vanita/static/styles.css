@@ -9,16 +9,21 @@ header {
     max-height: 200px;
     
 }
+#shoppingCar{
+position: absolute;
+right: 5%;
+height: 50%;
+}
 
-#login_button{
+#login_button, #shoppingCar{
     position: absolute;
     right: 5%;
     
 }
-    #register_button{
-        position: absolute;
-        right: 9%;
-    }
+#register_button{
+    position: absolute;
+    right: 9%;
+}
 
 body {
     background-color: #1b1b32;

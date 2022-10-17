@@ -13,3 +13,4 @@ function whatsappLink(){
 function submitButton(){
     alert("Thanks For Submitting your question, we will get back at you as soon as possible")
 }
+
