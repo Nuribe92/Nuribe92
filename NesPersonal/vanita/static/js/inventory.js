@@ -1,3 +1,4 @@
+console.log("hola");
 const shopContent = document.getElementById("shopContent");
 
 const products = [
