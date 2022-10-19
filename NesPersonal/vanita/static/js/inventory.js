@@ -1,5 +1,5 @@
-console.log("inventory")
-let stockProductos = [
+/*console.log("inventory")
+/*let stockProductos = [
     {
         id: 1,
         nombre: "Rubor y labial velvet beauty Glazed",
@@ -67,4 +67,4 @@ let stockProductos = [
         descripcion: "xxx10",
         img: "imgvid\kitDeCejas.jpg"
     }
-];
+];*/
