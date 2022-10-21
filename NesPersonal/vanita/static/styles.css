@@ -279,6 +279,9 @@ td{
     display: grid;
     grid-template-columns: auto auto;
     border-radius: 12px;
+    @media (max-height){
+        display: block;
+    }
 }
 .grid-videos{
     align-items: center;
