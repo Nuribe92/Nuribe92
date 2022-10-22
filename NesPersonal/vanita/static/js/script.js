@@ -1,7 +1,3 @@
-console.log("script")
-function alert1() {
-    alert("Nothing else to show");
-}
 function instaLink(){
     window.open("https://instagram.com/vanitabeauty_?igshid=YmMyMTA2M2Y=");
 }
@@ -16,9 +12,9 @@ function submitButton(){
 }
 
 
-const contenedorProductos = document.getElementById("contenedor-productos");
 
-let stockProductos = [
+
+const stockProductos = [
     {
         id: 1,
         nombre: "Rubor y labial velvet beauty Glazed",
@@ -87,8 +83,10 @@ let stockProductos = [
         img: "imgvid\kitDeCejas.jpg"
     }
 ];
+const contenedorProductos = document.getElementById('contenedor-productos');
 
 let carrito = []
+
 stockProductos.forEach((producto) => {
     const div = document.createElement('div')
     div.classList.add('producto')
@@ -100,4 +98,16 @@ stockProductos.forEach((producto) => {
     <button id="agregar${producto.id}" class="boton-agregar">Agregar<i class="fas fa-shopping-cart"></i></button>
     `
     contenedorProductos.appendChild(div)
+
+    const boton = document.getElementById('agregar${producto.id}')
+    
+    boton.addEventListener('click', () =>{
+        agregarAlCarrito(producto.id)
+    })
 })
+
+    const agregarAlCarrito = (prodId) => {
+        const item = stockProductos.find((prod) => prod.id === prodId)
+        carrito.push(item)
+        console.log(carrito)
+    }
