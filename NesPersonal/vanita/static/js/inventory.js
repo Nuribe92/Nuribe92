@@ -1,5 +1,5 @@
 /*console.log("inventory")
-/*let stockProductos = [
+let stockProductos = [
     {
         id: 1,
         nombre: "Rubor y labial velvet beauty Glazed",

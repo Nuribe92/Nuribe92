@@ -10,6 +10,7 @@ header {
     
 }
 #shoppingCar{
+width: 3%;
 position: absolute;
 right: 5%;
 height: 50%;
@@ -131,13 +132,8 @@ ol{
     text-align: center;
 }
 img {
-    display: flex;
-    /*width: 50%;
-    height: 100%;*/
-
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 0px 0px 12px 12px;
+    width: 100%;
+    margin-bottom: 10px;
 
 }
 
@@ -289,6 +285,13 @@ td{
     margin: 10px;
     margin-bottom: 20px;
     box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+}
+#contenedor-productos{
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .grid-videos{
     align-items: center;
