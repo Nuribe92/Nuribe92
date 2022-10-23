@@ -48,7 +48,7 @@ let stockProductos = [
         nombre: "Polvo Traslucido",
         precio: 12000,
         descripcion: "xxx5",
-        img: '../static/imgvid/polvosTraslucido.jpg'
+        img: '../static/imgvid/polvoTraslucido.jpg'
     },
     {
         id: 6,
@@ -102,7 +102,7 @@ stockProductos.forEach((producto) => {
     `
     contenedorProductos.appendChild(div)
 
-    const boton = document.getElementById('agregar${producto.id}')
+    const boton = document.getElementById(`agregar${producto.id}`)
 
     boton.addEventListener('click', () =>{
         agregarAlCarrito(producto.id)
@@ -116,7 +116,15 @@ const agregarAlCarrito = (prodId) => {
         console.log(carrito)
 }
 
+const eliminarDelCarrito = (prodId) => {
+    const item = carrito.find((prod) => prod.id === prodId)
+    const indice = carrito.indexOf(item)
+    carrito.splice(indice, 1)
+    actualizarCarrito()
+}
+
 const actualizarCarrito = ()=> {
+    contenedorCarrito.innerHTML = ""
 
     carrito.forEach((prod) => {
         const div = document.createElement('div')
