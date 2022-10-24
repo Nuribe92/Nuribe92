@@ -88,7 +88,14 @@ let stockProductos = [
 ]
 const contenedorProductos = document.getElementById('contenedor-productos');
 const contenedorCarrito = document.getElementById('carrito-contenedor')
+const botonVaciar = document.getElementById('vaciar-carrito')
+const contadorCarrito = document.getElementById('contadorCarrito')
 let carrito = []
+
+botonVaciar.addEventListener('click', () => {
+    carrito.length = 0
+    actualizarCarrito()
+})
 
 stockProductos.forEach((producto) => {
     const div = document.createElement('div')
@@ -136,6 +143,7 @@ const actualizarCarrito = ()=> {
         <button onclick ="eliminarDelCarrito(${prod.id})" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
         `
         contenedorCarrito.appendChild(div)
-    }
-    )}
+    })
+    contadorCarrito.innerText = carrito.length
+}
 
