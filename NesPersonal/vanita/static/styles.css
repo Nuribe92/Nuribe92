@@ -280,13 +280,35 @@ td{
         display: block;
     }
 }
-
+/*INVENTARIO EN PAGINA*/
 .producto{
-    max-width: 20%;
-    padding: 10px;
+    max-width: 25%;
+    padding: 2px;
     margin: 10px;
     margin-bottom: 20px;
     box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+    border: 2px solid var(--vanita-color);
+    border-radius: 15px;
+    padding-bottom: 10px;
+}
+.producto img{
+    border-top-left-radius:15px; 
+    border-top-right-radius: 15px;
+}
+.producto h3{
+    text-align: center;
+}
+.producto p{
+    padding-top: 5px;
+}
+.boton-agregar{
+    background-color: var(--vanita-color);
+    position: relative;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    font-size: 18px;
 }
 #boton-carrito {
     width: 1%;
@@ -438,10 +460,12 @@ video{
     .modal-carrito {
         position: relative;
         background-color: var(--background-blueis);
-        min-width: 500px;
+        min-width: 1000px;
         padding: 20px;
         margin-top: -100%;
         transition: all .5s;
+        border-radius: 15px;
+        border: 3px solid var(--vanita-color);
     }
     
     .modal-active .modal-carrito {
@@ -451,15 +475,18 @@ video{
     .modal-carrito h3 {
         color: royalblue;
         padding-bottom: 5px;
+
     }
     .modal-carrito #carritoCerrar {
         position: absolute;
         top: 15px;
         right: 15px;
-        font-size: 20px;
+        font-size: 30px;
         color: royalblue;
         border: none;
-        background-color: white;
+        border-radius: 50%;
+        background-color: var(--background-blueis);
+        
     }
     .modal-carrito #carritoCerrar:hover {
         cursor: pointer;
@@ -469,8 +496,10 @@ video{
     }
     .modal-carrito .precioProducto {
         padding-top: 10px;
-        
+        font-size: 1.5em;
+        margin: 10px 0px 10px 0px;
     }
+    
     
     .productoEnCarrito {
         border-left: 5px solid lightblue;
@@ -478,18 +507,29 @@ video{
         border-top-left-radius: 3px;
         margin: 5px 0;
         padding: 5px 10px;
-        display: flex;
-        justify-content: space-between;
+        padding-top: 5%;
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+
+        background-color: var(--vanita-color);
+        border-radius: 15px;
     }
     .productoEnCarrito:hover {
         border-left: 5px solid royalblue;
     }
     
+    
     .boton-eliminar {
-        background-color: white;
-        color: red;
+        
         border: none;
         font-size: 20px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-100%);
+        margin-bottom: 2%;
+        background-color: var(--vanita-color);
+        color: var(--background-blueis);
+
     }
     
     .boton-eliminar:hover {

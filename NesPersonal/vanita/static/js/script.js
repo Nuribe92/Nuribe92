@@ -20,6 +20,7 @@ let stockProductos = [
         nombre: "Rubor y labial velvet beauty Glazed",
         precio: 15000,
         descripcion: "xxx1",
+        cantidad: 1,
         img: '../static/imgvid/RuborYLabialVelvet.jpg'
     },
     {
@@ -27,6 +28,7 @@ let stockProductos = [
         nombre: "Soft Lips Individual",
         precio: 6000,
         descripcion: "xxx2",
+        cantidad: 1,
         img: '../static/imgvid/Soft-Lips.jpg'
     },
     {
@@ -34,6 +36,7 @@ let stockProductos = [
         nombre: "Contorno Cupcake",
         precio: 15000,
         descripcion: "xxx3",
+        cantidad: 1,
         img: '../static/imgvid/ContornoCupcake.jpg'
     },
     {
@@ -41,6 +44,7 @@ let stockProductos = [
         nombre: "Espuma Desmaquillante",
         precio: 25000,
         descripcion: "xxx4",
+        cantidad: 1,
         img: '../static/imgvid/espumaDesmaquillante.jpg'
     },
     {
@@ -48,6 +52,7 @@ let stockProductos = [
         nombre: "Polvo Traslucido",
         precio: 12000,
         descripcion: "xxx5",
+        cantidad: 1,
         img: '../static/imgvid/polvoTraslucido.jpg'
     },
     {
@@ -55,6 +60,7 @@ let stockProductos = [
         nombre: "Polvo Suelto Trendy",
         precio: 20000,
         descripcion: "xxx6",
+        cantidad: 1,
         img: '../static/imgvid/polvosSueltos.jpg'
     },
     {
@@ -62,6 +68,7 @@ let stockProductos = [
         nombre: "Corrector + Tratamiento Trendy",
         precio: 20000,
         descripcion: "xxx7",
+        cantidad: 1,
         img: '../static/imgvid/correctoYTratamiento.jpg'
     },
     {
@@ -69,6 +76,7 @@ let stockProductos = [
         nombre: "Lapiz De Cejas ",
         precio: 10000,
         descripcion: "xxx8",
+        cantidad: 1,
         img: '../static/imgvid/lapizDeCejas.jpg'
     },
     {
@@ -76,6 +84,7 @@ let stockProductos = [
         nombre: "Delineador Doble Trendy",
         precio: 15000,
         descripcion: "xxx9",
+        cantidad: 1,
         img: '../static/imgvid/delineadorDobleTrendy.jpg'
     },
     {
@@ -83,6 +92,7 @@ let stockProductos = [
         nombre: "Kit de Cejas Trendy",
         precio: 18000,
         descripcion: "xxx10",
+        cantidad: 1, 
         img: '../static/imgvid/kitDeCejas.jpg'
     }
 ]
@@ -90,6 +100,7 @@ const contenedorProductos = document.getElementById('contenedor-productos');
 const contenedorCarrito = document.getElementById('carrito-contenedor')
 const botonVaciar = document.getElementById('vaciar-carrito')
 const contadorCarrito = document.getElementById('contadorCarrito')
+const precioTotal = document.getElementById('precioTotal')
 let carrito = []
 
 botonVaciar.addEventListener('click', () => {
@@ -104,7 +115,7 @@ stockProductos.forEach((producto) => {
     <img src =${producto.img} alt="imagen de producto">
     <h3>${producto.nombre}</h3>
     <p>${producto.descripcion}</p>
-    <p class="precioProducto"> Precio:$ ${producto.precio}</p>
+    <p class="precioProducto"> Precio: $${producto.precio}</p>
     <button id="agregar${producto.id}" class="boton-agregar">Agregar<i class="fas fa-shopping-cart"></i></button>
     `
     contenedorProductos.appendChild(div)
@@ -145,5 +156,6 @@ const actualizarCarrito = ()=> {
         contenedorCarrito.appendChild(div)
     })
     contadorCarrito.innerText = carrito.length
+    precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.precio, 0)
 }
 
