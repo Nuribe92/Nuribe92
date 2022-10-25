@@ -22,6 +22,7 @@ height: 350%;
     right: 5%;
     
 }
+
 #register_button{
     position: absolute;
     right: 9%;
@@ -208,17 +209,16 @@ input[type="button"], input[type="reset"]{
 .grid{
     color: #0000;
 }
-#logo_vanita{
+#logo_vanita {
     width: 13%;
     height: 250%;
     position:absolute;
     align-items: center;
     margin-top: -60px;
     top: 1%;
-    left: 43%
-    
- 
+    left: 43%   
 }
+
 .d-block{
     display: flex;
     margin-left: auto;
