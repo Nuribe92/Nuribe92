@@ -460,6 +460,7 @@ video{
         transition: all .5s;
         border-radius: 15px;
         border: 3px solid var(--vanita-color);
+        
     }
     
     .modal-active .modal-carrito {
@@ -532,7 +533,7 @@ video{
         transform: translateY(-50%);
         margin-bottom: 2%;
         background-color: transparent;
-        color: var(--background-blueis);
+        color: black;
 
     }
     
