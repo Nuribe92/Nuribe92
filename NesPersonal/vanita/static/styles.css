@@ -450,8 +450,18 @@ video{
         transition: all .5s;
         opacity: 0;
         visibility: hidden;
+        
     }
-    
+    .modal-contenedor::-webkit-scrollbar {
+            width: 10px;
+          }
+    .modal-contenedor::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+          }
+    .modal-contenedor::-webkit-scrollbar-thumb {
+            background: black; 
+          }
+
     .modal-active {
         opacity: 1;
         visibility: visible;
