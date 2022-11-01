@@ -462,6 +462,7 @@ video{
             background: black; 
           }
 
+          
     .modal-active {
         opacity: 1;
         visibility: visible;
