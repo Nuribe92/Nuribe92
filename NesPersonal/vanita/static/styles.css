@@ -450,10 +450,11 @@ video{
         transition: all .5s;
         opacity: 0;
         visibility: hidden;
+        overflow: scroll;
         
     }
     .modal-contenedor::-webkit-scrollbar {
-            width: 10px;
+            width: 8px;
           }
     .modal-contenedor::-webkit-scrollbar-track {
             background: #f1f1f1; 
@@ -472,11 +473,14 @@ video{
         position: relative;
         background-color: var(--background-blueis);
         min-width: 1000px;
+        max-height: 80% ;
         padding: 20px;
         margin-top: -100%;
         transition: all .5s;
         border-radius: 15px;
         border: 3px solid var(--vanita-color);
+        overflow-y: scroll;
+
         
     }
     
