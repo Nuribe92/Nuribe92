@@ -154,7 +154,7 @@ img {
 }
 
 .carousel-item{
-    height: 50rem;
+    height: 45rem;
     width: 100%;
     position: relative;
     top: 50%;
@@ -168,8 +168,8 @@ img {
    }
    .carousel-item img{
 
-    max-height: 50rem;
-    max-width: 70%;
+    max-height: 43rem;
+    max-width: 50%;
     border-radius: 15px;
     object-fit:fill;
    }
