@@ -160,7 +160,6 @@ const eliminarDelCarrito = (prodId) => {
 
 const actualizarCarrito = ()=> {
     contenedorCarrito.innerHTML = ""
-
     carrito.forEach((prod) => {
         const div = document.createElement('div')
         div.className = ('productoEnCarrito')

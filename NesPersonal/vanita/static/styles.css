@@ -449,21 +449,10 @@ video{
         align-items: center;
         transition: all .5s;
         opacity: 0;
-        visibility: hidden;
+       visibility: hidden;
         overflow: scroll;
         
-    }
-    .modal-contenedor::-webkit-scrollbar {
-            width: 8px;
-          }
-    .modal-contenedor::-webkit-scrollbar-track {
-            background: #f1f1f1; 
-          }
-    .modal-contenedor::-webkit-scrollbar-thumb {
-            background: black; 
-          }
-
-          
+    }          
     .modal-active {
         opacity: 1;
         visibility: visible;
